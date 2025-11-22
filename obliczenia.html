@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <header>
+        <h1>Całodobowa stacja paliw</h1>
+    </header>
+    <main>
+        <img src="home.png" alt=""><a href="stacja.html"></a>
+        <img src="znak.png" alt=""><a href="obliczenia.html"></a>
+        <a href="kwerendy.txt">Pobierz dokumenty</a>
+    </main>
+    <section>
+        <div class="Left">
+            <h2>Orientacyjny koszt paliwa</h2>
+            <label>Rodzaj paliwa (1-benzyna, 2-olej napędowy): </label>
+            <input type="number" class="type">
+            <label>Ile litrów: </label>
+            <input type="number" class="liters">
+            <button>OBLICZ</button>
+            <p class="show"></p>
+        </div>
+        <div class="Right">
+            <img src="samochod.png" alt="samochód" class="car">
+        </div>
+    </section>
+    <footer>
+        <p>Stronę opracował: 00000000000</p>
+    </footer>
+    <script>
+        const button = document.querySelector("button");
+        const type = document.querySelector(".type");
+        const liters = document.querySelector(".liters");
+        const show = document.querySelector(".show");
+
+        button.addEventListener("click", () => {
+            let x = type.value.trim();
+            let y = liters.value.trim();
+            let wynik;
+
+            switch(x) {
+                case 1:
+                    wynik = y*4;
+                break;
+                case 2:
+                    wynik = y*3,5;
+                break;
+                default: 
+                    wynik = 0;
+                break;
+            };
+            show.textContent = `koszt paliwa: ${$} zł`;
+        })
+    </script>
+</body>
+</html>
