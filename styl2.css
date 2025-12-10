@@ -1,50 +1,55 @@
 * {
-    font-family: "Cambria";
-    text-align: center;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	font-family: 'Cambria';
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
-header, footer {
-    background-color: rgb(120, 0, 46);
-    color: white;
-    padding: 5px;
-    font-size: 150%;
+header,
+footer {
+	background-color: rgb(120, 0, 46);
+	color: white;
+	padding: 5px;
+	font-size: 150%;
 }
 main {
-    background-color: rgb(173, 20, 87);
-    text-align: left;
-    display: flex;
+	background-color: rgb(173, 20, 87);
+	text-align: left;
+	display: flex;
 }
-.Left {
-    background-color: Snow;
-    color: olivedrab;
-    width: 60%;
-    height: 322px;
-    text-align: left;
+section {
+	display: flex;
 }
-.Right {
-    background-color: rgb(173, 20, 87);
-    width: 40%;
-    height: 322px;
+.left {
+	background-color: Snow;
+	color: olivedrab;
+	width: 60%;
+	height: 322px;
+	text-align: left;
+}
+.right {
+	background-color: rgb(173, 20, 87);
+	width: 40%;
+	height: 322px;
 }
 .car {
-    margin: 40px;
-    padding: 10px;
+	margin: 40px;
+	padding: 10px;
 }
 .car:hover {
-    border: 1px yellowgreen dotted;
+	border: 1px yellowgreen dotted;
 }
 a {
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: yellowgreen;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 50px;
+	padding-right: 50px;
+	color: yellowgreen;
 }
-table, td {
-    border: 1px olivedrab solid;
+table,
+td {
+	border: 1px olivedrab solid;
 }
 table {
-    width: 90%;
+	width: 90%;
 }
